@@ -1,0 +1,110 @@
+.background-image {
+    position: relative;
+    overflow: hidden  !important;
+
+    &::before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgb(192, 71, 71);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    opacity: 0.7;
+    margin-left:  -350px;
+    margin-top: 450px;
+    overflow: hidden;
+    width: 40%;
+    height: 30%;
+    border-radius: 10%;
+    transform: rotate(35deg);
+    z-index: -1;
+}
+
+&::after{
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgb(238, 90, 90);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    opacity: 0.8;
+    margin-right: -350px;
+    margin-top: 1400px;
+    overflow: hidden  !important;
+    width: 40%;
+    height: 30%;
+    border-radius: 10%;
+    transform: rotate(39deg);
+    z-index: -1;
+}
+
+}
+
+$small:495px ; 
+$medium: 991px;
+
+.background-image {
+    @media screen and (max-width: $small) {
+    
+        &::before{
+        content: '';
+        top: 300px;
+        left: -50;
+        margin-top: 550px ;  
+        width: 80%;
+        height: 20%;
+        transform: rotate(45deg);
+    
+    }
+    
+    &::after{
+        content: '';
+        top: 689px !important;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        // margin-top: 50px;
+        width: 80%;
+        height: 20%;
+        border-radius: 10%;
+        transform: rotate(39deg);
+        z-index: -100;
+    }
+}
+@media screen and (max-width: $medium) {
+    &::before{
+    content: '';
+    top: 300px;
+    left: -50;
+    margin-top: 550px;  
+    width: 80%;
+    height: 20%;
+    transform: rotate(45deg);
+}
+
+&::after{
+    content: '';
+    top: 1000px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    // margin-top: 50px;
+    width: 80%;
+    height: 20%;
+    border-radius: 10%;
+    transform: rotate(39deg);
+    z-index: -100;
+}
+}
+@media screen and (max-width: 1200px) {
+    &::before{
+    content: '';
+    margin-top: 550px;  
+}
+}
+}

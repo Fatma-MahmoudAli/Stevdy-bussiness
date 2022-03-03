@@ -1,0 +1,107 @@
+.background-image {
+  position: relative;
+  overflow: hidden  !important;
+}
+
+.background-image::before {
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: #c04747;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  margin-left: -350px;
+  margin-top: 450px;
+  overflow: hidden;
+  width: 40%;
+  height: 30%;
+  border-radius: 10%;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  z-index: -1;
+}
+
+.background-image::after {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: #ee5a5a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  margin-right: -350px;
+  margin-top: 1400px;
+  overflow: hidden  !important;
+  width: 40%;
+  height: 30%;
+  border-radius: 10%;
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+  z-index: -1;
+}
+
+@media screen and (max-width: 495px) {
+  .background-image::before {
+    content: '';
+    top: 300px;
+    left: -50;
+    margin-top: 550px;
+    width: 80%;
+    height: 20%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .background-image::after {
+    content: '';
+    top: 689px !important;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    border-radius: 10%;
+    -webkit-transform: rotate(39deg);
+            transform: rotate(39deg);
+    z-index: -100;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .background-image::before {
+    content: '';
+    top: 300px;
+    left: -50;
+    margin-top: 550px;
+    width: 80%;
+    height: 20%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .background-image::after {
+    content: '';
+    top: 1000px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    width: 80%;
+    height: 20%;
+    border-radius: 10%;
+    -webkit-transform: rotate(39deg);
+            transform: rotate(39deg);
+    z-index: -100;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .background-image::before {
+    content: '';
+    margin-top: 550px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
